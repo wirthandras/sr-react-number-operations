@@ -1,22 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
+class Calculator extends React.Component {
+
+  calculate() {
+    console.log("calculate");
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, Calculator!</h1>
+        <div>
+          <input placeholder='4'></input>
+          <input placeholder='23'></input>
+          <input placeholder='+'></input>
+          <button onClick={this.calculate()}>Calculate</button>
+          <span>Display the result here</span>
+        </div>
+      </div>
+    );
+  }
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Calculator />
       </header>
     </div>
   );
