@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Color from 'react-native-colors'
 
 class Calculator extends React.Component {
 
@@ -11,7 +12,7 @@ class Calculator extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello, Calculator!</h1>
+        <h1 style={{ backgroundColor: Color.TEAL[133] }}>Hello, Calculator!</h1>
         <div>
           <input placeholder='4'></input>
           <input placeholder='23'></input>
