@@ -1,3 +1,8 @@
+# Task
+
+Please implement a simple calculator application which able to operate with basic mathematical arithmetic operations.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
